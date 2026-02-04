@@ -12,6 +12,54 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarcsoft_portrait_distortion_correction",
+    owner: "motorola",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_portrait_distortion_correction.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    vendor: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_scout_imx896_mipi_raw_milos_IdxMgr",
+    owner: "motorola",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6878/mot_scout_imx896_mipi_raw_milos_IdxMgr.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    vendor: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_scout_imx896_mipi_raw_milos_tuning",
+    owner: "motorola",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6878/mot_scout_imx896_mipi_raw_milos_tuning.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    vendor: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.motorola.hardware.display.panel@1.0",
     owner: "motorola",
     strip: {
